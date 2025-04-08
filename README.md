@@ -2,6 +2,7 @@
 
 # Install neccessary packages.
 npm install
+npm install sightengine --save
 
 # Build project.
 npm run build
