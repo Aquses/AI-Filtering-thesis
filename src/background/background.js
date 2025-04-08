@@ -1,3 +1,5 @@
+import { extractContentScore, isExplicitContent } from './analyzeHelpers.js';
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.type === 'check_explicit_content') {
         checkTextForExplicitContent(request.text, sender.tab.id);
@@ -95,7 +97,23 @@ function analyzeImageWithSightEngine(imageUrl) {
                 console.error('Invalid API response:', data);
                 return;
             }
-            
+
+            const scores = extractContentScore(data);
+            console.log('Extracted Scores:', scores);
+
+            const customThresholds = {
+                sexual_activity: 0.9,
+                erotica: 0.9,
+                firearm: 0.8,
+                alcohol: 0.85,
+                drugs: 0.8,
+                offensive: 0.88,
+                gore: 0.92,
+                violence: 0.9,
+                selfharm: 0.93
+            };
+
+            const isExplicit = isExplicitContent(scores, customThresholds);
             console.log('Explicit content detected?', isExplicit);
 
             if (isExplicit) {
@@ -120,6 +138,8 @@ function analyzeImageWithSightEngine(imageUrl) {
         });
 }
 
+// might need to implement something faster than JS.
+// CSS seems like can blur faster.
 function blurExplicitImage(imageUrl) {
     document.querySelectorAll('img').forEach(img => {
         if (img.src === imageUrl) {

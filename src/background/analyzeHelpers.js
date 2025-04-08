@@ -25,5 +25,8 @@ export function extractContentScore(data) {
 }
 
 export function isExplicitContent(scores, thresholds = {}) {
-
+    return Object.entries(scores).some(([key, score]) => {
+        const threshold = thresholds[key] ?? 0.95;
+        return score > threshold;
+    });
 }
