@@ -77,6 +77,7 @@ function analyzeImageWithSightEngine(imageUrl) {
     const API_USER = import.meta.env.VITE_API_USER_SIGHT_ENGINE;
     const API_SECRET = import.meta.env.VITE_API_SECRET_SIGHT_ENGINE;
     const API_URL = 'https://api.sightengine.com/1.0/check.json';
+
     console.log(`Analyzing image: ${imageUrl}`);
 
     const params = new URLSearchParams({
@@ -130,6 +131,7 @@ function analyzeImageWithSightEngine(imageUrl) {
                 (violence.prob || 0) > 0.95 ||
                 (selfharm.prob || 0) > 0.95
             );
+            
             console.log('Explicit content detected?', isExplicit);
 
             if (isExplicit) {
