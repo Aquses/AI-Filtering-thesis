@@ -1,21 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     let textContent = document.body ? document.body.innerText : "";
 
-    function checkImgBySize(img) {
-        return img.naturalWidth <= 64 || img.naturalHeight <= 64;
-    }
+    // function checkImgBySize(img) {
+    //     return img.naturalWidth <= 64 || img.naturalHeight <= 64;
+    // }
 
     let images = [...document.images]
         .map(img => img.src)
         .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src) && !/(icon|icons|favicon|data:image|svg)/i.test(src));
-        .filter(img => {
-            let tempImg = new Image();
-            tempImg.src = img;
-
-            tempImg.onload = () {
-                
-            }
-        });
 
     const sentences = textContent.split(/[.!?]\s/).map(sentence => sentence.trim()).filter(Boolean);
     const cleanedSentences = sentences.filter(sentence => !/\b(icon|icons|favicon)\b/i.test(sentence));
