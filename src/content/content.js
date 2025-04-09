@@ -2,18 +2,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let textContent = document.body ? document.body.innerText : "";
     let images = [...document.images]
         .map(img => img.src)
-        .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src));
-    
-    
+        .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src) && !/(icon|icons|favicon)/i.test(src));
+
     const sentences = textContent.split(/[.!?]\s/).map(sentence => sentence.trim()).filter(Boolean);
-    
+    const cleanedSentences = sentences.filter(sentence => !/(icon|icons|favicon)/i.test(sentence));
+
     let combinedSentences = [];
     let currentSentence = [];
     let currentWordCount = 0;
 
-    sentences.forEach(sentence => {
+    cleanedSentences.forEach(sentence => {
         let wordCount = sentence.split(' ').length;
-        
+
         if (currentWordCount + wordCount <= 35) {
             currentSentence.push(sentence);
             currentWordCount += wordCount;
@@ -38,6 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log(images)
     console.log("Sentences:", combinedSentences);
-    
+
     chrome.runtime.sendMessage({ type: 'check_explicit_content', text: textContent });
 });
