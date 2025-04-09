@@ -1,23 +1,26 @@
-document.addEventListener("DOMContentLoaded", () => {
-    let textContent = document.body ? document.body.innerText : "";
+const MIN_WIDTH = 64;
+const MIN_HEIGHT = 64;
+const MIN_ASPECT_RATIO = 1.2;
 
-    // function checkImgBySize(img) {
-    //     return img.naturalWidth <= 64 || img.naturalHeight <= 64;
-    // }
+function checkImgBySize({ naturalWidth: width, naturalHeight: height }) {
+    if (width <= MIN_WIDTH || height <= MIN_HEIGHT) return false;
+    const aspectRatio = width / height;
+    return aspectRatio >= MIN_ASPECT_RATIO;
+}
 
-    let images = [...document.images]
-        .map(img => img.src)
-        .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src) && !/(icon|icons|favicon|data:image|svg)/i.test(src));
+function processSentences(text) {
+    const sentences = text.split(/[.!?]\s/)
+        .map(sentence => sentence.trim())
+        .filter(Boolean);
 
-    const sentences = textContent.split(/[.!?]\s/).map(sentence => sentence.trim()).filter(Boolean);
     const cleanedSentences = sentences.filter(sentence => !/\b(icon|icons|favicon)\b/i.test(sentence));
 
-    let combinedSentences = [];
+    const combinedSentences = [];
     let currentSentence = [];
     let currentWordCount = 0;
 
     cleanedSentences.forEach(sentence => {
-        let wordCount = sentence.split(' ').length;
+        const wordCount = sentence.split(' ').length;
 
         if (currentWordCount + wordCount <= 35) {
             currentSentence.push(sentence);
@@ -28,21 +31,48 @@ document.addEventListener("DOMContentLoaded", () => {
             currentWordCount = wordCount;
         }
     });
-    images.forEach(imageUrl => {
-        chrome.runtime.sendMessage({
-            type: 'analyze_image',
-            image: imageUrl
-        }, (response) => {
-            console.log('Image analysis result:', response);
-        });
-    });
 
     if (currentSentence.length > 0) {
         combinedSentences.push(currentSentence.join(' '));
     }
+    return combinedSentences;
+}
 
-    console.log(images)
-    console.log("Sentences:", combinedSentences);
+function getValidImages() {
+    return [...document.images]
+        .map(({ src }) => src)
+        .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src) && !/(icon|icons|favicon|data:image|svg)/i.test(src));
+}
 
-    chrome.runtime.sendMessage({ type: 'check_explicit_content', text: textContent });
+document.addEventListener("DOMContentLoaded", async () => {
+    const textContent = document.body?.innerText || '';
+    const combinedSentences = processSentences(textContent);
+    const images = getValidImages();
+
+    console.log('Valid images:', images);
+    console.log('Sentences:', combinedSentences);
+
+    chrome.runtime.sendMessage({
+        type: 'check_explicit_content',
+        text: textContent
+    });
+
+    await Promise.all(images.map(async (imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+
+        await new Promise((resolve, reject) => {
+            img.onload = resolve;
+            img.onerror = reject;
+        });
+
+        if (checkImgBySize(img)) {
+            chrome.runtime.sendMessage({
+                type: 'analyze_image',
+                image: imageUrl
+            }, (response) => {
+                console.log('Image analysis result:', response);
+            });
+        }
+    }));
 });
