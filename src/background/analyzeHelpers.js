@@ -9,8 +9,6 @@ export function extractContentScore(data) {
         recreational_drug = {},
         alcohol = {},
         weapon = { classes: {}, firearm_type: {}, firearm_action: {} },
-        medical = {},
-        faces = [],
     } = data;
 
     return {

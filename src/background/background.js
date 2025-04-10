@@ -138,13 +138,13 @@ function analyzeImageWithSightEngine(imageUrl) {
         });
 }
 
-// might need to implement something faster than JS.
-// CSS seems like can blur faster.
 function blurExplicitImage(imageUrl) {
     document.querySelectorAll('img').forEach(img => {
-        if (img.src === imageUrl) {
+        const imgSrcs = [img.src, img.getAttribute('data-src'), img.currentSrc];
+
+        if (imgSrcs.includes(imageUrl)) {
             img.style.filter = 'blur(20px)';
-            img.style.transition = 'filter 0.5s ease-in-out';
+            img.style.transition = 'filter 0.3s ease-in-out';
         }
     });
 }
