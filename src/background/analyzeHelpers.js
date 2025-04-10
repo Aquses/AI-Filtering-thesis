@@ -8,7 +8,9 @@ export function extractContentScore(data) {
         selfharm = {},
         recreational_drug = {},
         alcohol = {},
-        weapon = { classes: {} }
+        weapon = { classes: {}, firearm_type: {}, firearm_action: {} },
+        medical = {},
+        faces = [],
     } = data;
 
     return {
@@ -20,7 +22,7 @@ export function extractContentScore(data) {
         offensive: offensive.prob || 0,
         gore: gore.prob || 0,
         violence: violence.prob || 0,
-        selfharm: selfharm.prob || 0
+        selfharm: selfharm.prob || 0,
     }
 }
 

@@ -102,15 +102,15 @@ function analyzeImageWithSightEngine(imageUrl) {
             console.log('Extracted Scores:', scores);
 
             const customThresholds = {
-                sexual_activity: 0.9,
-                erotica: 0.9,
-                firearm: 0.8,
-                alcohol: 0.85,
-                drugs: 0.8,
-                offensive: 0.88,
-                gore: 0.92,
-                violence: 0.9,
-                selfharm: 0.93
+                sexual_activity: 0.5,
+                erotica: 0.5,
+                firearm: 0.5,
+                alcohol: 0.5,
+                drugs: 0.5,
+                offensive: 0.5,
+                gore: 0.5,
+                violence: 0.5,
+                selfharm: 0.5
             };
 
             const isExplicit = isExplicitContent(scores, customThresholds);

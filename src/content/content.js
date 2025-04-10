@@ -41,7 +41,7 @@ function processSentences(text) {
 function getValidImages() {
     return [...document.images]
         .map(({ src }) => src)
-        .filter(src => /\.(jpeg|jpg|png|webp)$/i.test(src) && !/(icon|icons|favicon|data:image|svg)/i.test(src));
+        .filter(src => /\.(jpeg|jpg|png|webp|svg)$/i.test(src) && !/(icon|icons|favicon|data:image)/i.test(src));
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
