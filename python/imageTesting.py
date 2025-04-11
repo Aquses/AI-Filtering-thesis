@@ -3,6 +3,8 @@ import requests
 import json
 import os
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import matplotlib.pyplot as plt
+
 
 load_dotenv()
 
@@ -36,7 +38,7 @@ for category in categories:
                 print(json.dumps(output, indent=2))
 
                 firearm_score = output.get('weapon', {}).get('classes', {}).get('firearm', 0)
-                if firearm_score > 0.7:
+                if firearm_score > 0.5:
                     print('Explicit content')
                     predicted_labels.append('firearm')
                 else:
@@ -53,3 +55,14 @@ print(f"Accuracy: {accuracy:.2f}")
 print(f"Precision: {precision:.2f}")
 print(f"Recall: {recall:.2f}")
 print(f"F1 Score: {f1:.2f}")
+
+metrics = {'Accuracy': accuracy, 'Precision': precision, 'Recall': recall, 'F1 Score': f1}
+
+plt.figure(figsize=(8, 6))
+plt.bar(metrics.keys(), metrics.values(), color=['blue', 'green', 'orange', 'red'])
+
+plt.xlabel('Metrics')
+plt.ylabel('Scores')
+plt.title('Evaluation Metrics for Weapon Detection')
+
+plt.show()
