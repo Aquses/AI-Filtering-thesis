@@ -59,10 +59,14 @@ print(f"F1 Score: {f1:.2f}")
 metrics = {'Accuracy': accuracy, 'Precision': precision, 'Recall': recall, 'F1 Score': f1}
 
 plt.figure(figsize=(8, 6))
-plt.bar(metrics.keys(), metrics.values(), color=['blue', 'green', 'orange', 'red'])
+bars = plt.bar(metrics.keys(), metrics.values(), color=['blue', 'green', 'orange', 'red'])
 
 plt.xlabel('Metrics')
 plt.ylabel('Scores')
 plt.title('Evaluation Metrics for Weapon Detection')
+
+for bar in bars:
+    yval = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width() / 2, yval + 0.01, f'{yval:.2f}', ha='center', va='bottom')
 
 plt.show()
