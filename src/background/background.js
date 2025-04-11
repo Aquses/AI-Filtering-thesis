@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 function checkTextForExplicitContent(text, tabId) {
-    const API_KEY = import.meta.env.API_KEY_PRIMITIVE_AI;
+    const API_KEY = import.meta.env.VITE_API_KEY_PRIMITIVE_AI;
     const url = `https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=${API_KEY}`;
 
     const sentences = text.split(/[.!?]\s+/).map(sentence => sentence.trim()).filter(Boolean);
@@ -76,8 +76,8 @@ function checkTextForExplicitContent(text, tabId) {
 }
 
 function analyzeImageWithSightEngine(imageUrl) {
-    const API_USER = import.meta.env.SIGHT_ENGINE_API_USER;
-    const API_SECRET = import.meta.env.SIGHT_ENGINE_API_SECRET;
+    const API_USER = import.meta.env.VITE_API_USER_SIGHT_ENGINE;
+    const API_SECRET = import.meta.env.VITE_API_SECRET_SIGHT_ENGINE;
     const API_URL = 'https://api.sightengine.com/1.0/check.json';
 
     console.log(`Analyzing image: ${imageUrl}`);

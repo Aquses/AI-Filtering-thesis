@@ -5,7 +5,6 @@ import os
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import matplotlib.pyplot as plt
 
-
 load_dotenv()
 
 api_key = os.getenv('SIGHT_ENGINE_API_USER')
