@@ -16,11 +16,13 @@ params = {
 
 image_dir = '../python/test_images/'
 
-files = [img for img in os.listdir(image_dir) if img.lower().endswith(('.jpg', '.png', '.jpeg'))]
+image_files = [f for f in os.listdir(image_dir) if f.lower().endswith(('.png','.jpg', '.jpeg'))]
 
-# files = {'media': open('../python/test_images/Nprofile2.jpg', 'rb')}
-# r = requests.post('https://api.sightengine.com/1.0/check.json', files=files, data=params)
-
-output = json.loads(r.text)
-print(output)
-
+for image_file in image_files:
+    image_path = os.path.join(image_dir, image_file)
+    with open(image_path, 'rb') as image:
+        files = {'media': image}
+        r = requests.post('https://api.sightengine.com/1.0/check.json', files=files, data=params)
+        output = json.loads(r.text)
+        print(f"Results for {image_file}:")
+        print(json.dumps(output, indent=2))
