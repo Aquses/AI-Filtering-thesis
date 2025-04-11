@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import requests
 import json
 import os
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 load_dotenv()
 
@@ -9,6 +10,7 @@ api_key = os.getenv('SIGHT_ENGINE_API_USER')
 api_secret = os.getenv('SIGHT_ENGINE_API_SECRET')
 true_labels = []
 predicted_labels = []
+categories = ['firearm', 'no_firearm']
 
 params = {
   'models': 'weapon',
@@ -18,20 +20,36 @@ params = {
 
 image_dir = '../python/test_images/'
 
-image_files = [f for f in os.listdir(image_dir) if f.lower().endswith(('.png','.jpg', '.jpeg'))]
+categories = [category for category in os.listdir(image_dir) if os.path.isdir(os.path.join(image_dir, category))]
 
-for image_file in image_files:
-    image_path = os.path.join(image_dir, image_file)
-    with open(image_path, 'rb') as image:
-        files = {'media': image}
-        r = requests.post('https://api.sightengine.com/1.0/check.json', files=files, data=params)
-        output = json.loads(r.text)
-        print(f"Results for {image_file}:")
-        print(json.dumps(output, indent=2))
+for category in categories:
+    category_dir = os.path.join(image_dir, category)
 
-        is_explicit = False
+    for image_file in os.listdir(category_dir):
+        if image_file.lower().endswith(('.png', '.jpg', '.jpeg')):
+            image_path = os.path.join(category_dir, image_file)
+            true_labels.append(category)
+            with open(image_path, 'rb') as image:
+                files = {'media': image}
+                r = requests.post('https://api.sightengine.com/1.0/check.json', files=files, data=params)
+                output = json.loads(r.text)
+                print(json.dumps(output, indent=2))
 
-        firearm_score = output.get('weapon', {}).get('classes', {}).get('firearm', 0)
-        if firearm_score > 0.7:
-            is_firearm = True
-            print(f"Result: Firearm detected with a score of {firearm_score}")
+                firearm_score = output.get('weapon', {}).get('classes', {}).get('firearm', 0)
+                if firearm_score > 0.7:
+                    print('Explicit content')
+                    predicted_labels.append('firearm')
+                else:
+                    print('Not explicit content')
+                    predicted_labels.append('no_firearm')
+
+accuracy = accuracy_score(true_labels, predicted_labels)
+precision = precision_score(true_labels, predicted_labels, pos_label='firearm')
+recall = recall_score(true_labels, predicted_labels, pos_label='firearm')
+f1 = f1_score(true_labels, predicted_labels, pos_label='firearm')
+
+print("\nEvaluation Metrics:")
+print(f"Accuracy: {accuracy:.2f}")
+print(f"Precision: {precision:.2f}")
+print(f"Recall: {recall:.2f}")
+print(f"F1 Score: {f1:.2f}")
