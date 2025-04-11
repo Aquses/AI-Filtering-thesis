@@ -6,10 +6,12 @@ import os
 load_dotenv()
 
 api_key = os.getenv('SIGHT_ENGINE_API_USER')
-api_secret = os.getenv('SIGHT_ENGINE_API_SECRET')   
+api_secret = os.getenv('SIGHT_ENGINE_API_SECRET')
+true_labels = []
+predicted_labels = []
 
 params = {
-  'models': 'nudity-2.1,weapon,alcohol,recreational_drug,medical,offensive-2.0,gore-2.0,violence,self-harm',
+  'models': 'weapon',
   'api_user': api_key,
   'api_secret': api_secret
 }
@@ -26,3 +28,10 @@ for image_file in image_files:
         output = json.loads(r.text)
         print(f"Results for {image_file}:")
         print(json.dumps(output, indent=2))
+
+        is_explicit = False
+
+        firearm_score = output.get('weapon', {}).get('classes', {}).get('firearm', 0)
+        if firearm_score > 0.7:
+            is_firearm = True
+            print(f"Result: Firearm detected with a score of {firearm_score}")
