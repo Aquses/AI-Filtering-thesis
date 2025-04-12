@@ -11,3 +11,4 @@ dist/
 # for testing images
 python/test_images/*
 dataset_images_weapon
+testing_images/
