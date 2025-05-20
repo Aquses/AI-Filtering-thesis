@@ -1,0 +1,29 @@
+@startuml
+
+' Define actors and participants with better naming
+actor "User" as User
+
+box "Client Side"
+  participant "Web Browser" as Browser
+  participant "Extension UI" as Extension
+  participant "Extension Script" as Code
+end box
+
+box "External Service"
+  participant "AI API Service" as API
+end box
+
+' Sequence starts here
+User -> Browser : 1. Load webpage
+Browser -> Extension : 2. Notify extension of page load
+Extension --> Code : 3. Trigger scraping and analysis script
+Code -> API : 4. Send tokenized text & image URLs
+API --> Code : 5. Return probability score
+Code -> Code : 6. Evaluate result against threshold
+
+alt Score > Threshold
+  Code --> Extension : 7a. Script to blur image or block webpage
+  Extension -> Browser : 8. Update webpage content visually
+end
+
+@enduml

@@ -43,7 +43,7 @@ function checkTextForExplicitContent(text, tabId) {
                 return {
                     text: sentence,
                     toxicity: data.attributeScores?.TOXICITY?.summaryScore?.value || 0
-                }; // currently only checking for toxicity, add the rest.
+                };
             })
             .catch(error => {
                 console.error("API Error:", error);

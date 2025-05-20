@@ -11,15 +11,17 @@ api_key = os.getenv('SIGHT_ENGINE_API_USER')
 api_secret = os.getenv('SIGHT_ENGINE_API_SECRET')
 true_labels = []
 predicted_labels = []
-categories = ['firearm', 'no_firearm']
+# categories = ['firearm', 'no_firearm']
+# categories = ['nude', 'non_nude']
+categories = ['explicit', 'non_explicit']
 
 params = {
-  'models': 'weapon',
-  'api_user': api_key,
+  'models': 'nudity-2.1,weapon',
+  'api_user': api_key,  
   'api_secret': api_secret
 }
 
-image_dir = '../testing_images/'
+image_dir = '../python/test_images/'
 
 categories = [category for category in os.listdir(image_dir) if os.path.isdir(os.path.join(image_dir, category))]
 
@@ -40,25 +42,30 @@ for category in categories:
                 firearm_score = output.get('weapon', {}).get('classes', {}).get('firearm', 0)
                 firearm_gesture_score = output.get('weapon', {}).get('classes', {}).get('firearm_gesture', 0)
                 firearm_toy_score = output.get('weapon', {}).get('classes', {}).get('firearm_toy', 0)
+                sexual_activity_score = output.get('nudity', {}).get('sexual_activity', 0)
+                sexual_display_score = output.get('nudity', {}).get('sexual_display', 0)
+                erotica_score = output.get('nudity', {}).get('erotica', 0)
+                very_suggestive_score = output.get('nudity', {}).get('very_suggestive', 0)
+                suggestive_score = output.get('nudity', {}).get('suggestive', 0)
+                mildly_suggestive_score = output.get('nudity', {}).get('mildly_suggestive', 0)
 
-                if firearm_toy_score > 0.5:
-                    print(f"Toy gun detected - Toy Score: {firearm_toy_score}")
-                    predicted_labels.append('no_firearm')
-                elif firearm_score > 0.5:
-                    print(f"Explicit firearm detected - Firearm Score: {firearm_score}")
-                    predicted_labels.append('firearm')
+                nudity_score = max(sexual_activity_score, sexual_display_score, erotica_score, 
+                                   very_suggestive_score, suggestive_score, mildly_suggestive_score)
+
+                if (firearm_score > 0.5 or firearm_toy_score > 0.5 or nudity_score > 0.5):
+                    predicted_labels.append('explicit')
                 else:
-                    print("Not a firearm (low confidence) - classifying as no_firearm")
-                    predicted_labels.append('no_firearm')
+                    predicted_labels.append('non_explicit')
+
                 print(f"True Label: {category}, Predicted Label: {predicted_labels[-1]}")
 
 print(f"\nTrue Labels: {true_labels}")
 print(f"Predicted Labels: {predicted_labels}")
 
 accuracy = accuracy_score(true_labels, predicted_labels)
-precision = precision_score(true_labels, predicted_labels, pos_label='firearm')
-recall = recall_score(true_labels, predicted_labels, pos_label='firearm')
-f1 = f1_score(true_labels, predicted_labels, pos_label='firearm')
+precision = precision_score(true_labels, predicted_labels, pos_label='explicit')
+recall = recall_score(true_labels, predicted_labels, pos_label='explicit')
+f1 = f1_score(true_labels, predicted_labels, pos_label='explicit')
 
 print("\nEvaluation Metrics:")
 print(f"Accuracy: {accuracy:.4f}")
@@ -73,7 +80,7 @@ bars = plt.bar(metrics.keys(), metrics.values(), color=['blue', 'green', 'orange
 
 plt.xlabel('Metrics')
 plt.ylabel('Scores')
-plt.title('Evaluation Metrics for Weapon Detection')
+plt.title('Evaluation Metrics for Firearm and Nudity Detection')
 
 for bar in bars:
     yval = bar.get_height()
