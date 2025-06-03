@@ -1,0 +1,851 @@
+Dataset,Threshold,Accuracy,Precision,Recall,F1 Score,F2 Score,Classification Report,Confusion Matrix,True Positive Category Counts
+../data/labeled_data_small_42.csv,0.5,0.7233333333333334,0.7500124384297726,0.7233333333333334,0.7157501797965731,0.7157172214197848,"                precision    recall  f1-score   support
+
+    Offensive       0.67      0.89      0.76       150
+Non-Offensive       0.83      0.56      0.67       150
+
+     accuracy                           0.72       300
+    macro avg       0.75      0.72      0.72       300
+ weighted avg       0.75      0.72      0.72       300
+","[[133  17]
+ [ 66  84]]",PROFANITY: 110; TOXICITY: 18; INSULT: 1; SPAM: 4
+../data/labeled_data_small_42.csv,0.52,0.7333333333333333,0.7531828703703703,0.7333333333333333,0.7280021759825921,0.7277756377332648,"               precision    recall  f1-score   support
+
+    Offensive       0.68      0.87      0.77       150
+Non-Offensive       0.82      0.59      0.69       150
+
+     accuracy                           0.73       300
+    macro avg       0.75      0.73      0.73       300
+ weighted avg       0.75      0.73      0.73       300
+","[[131  19]
+ [ 61  89]]",PROFANITY: 105; TOXICITY: 21; INSULT: 1; SPAM: 4
+../data/labeled_data_small_42.csv,0.54,0.7333333333333333,0.7475947934352009,0.7333333333333333,0.7294372294372294,0.7292535334744585,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.85      0.76       150
+Non-Offensive       0.81      0.61      0.70       150
+
+     accuracy                           0.73       300
+    macro avg       0.75      0.73      0.73       300
+ weighted avg       0.75      0.73      0.73       300
+","[[128  22]
+ [ 58  92]]",PROFANITY: 104; TOXICITY: 18; SPAM: 6
+../data/labeled_data_small_42.csv,0.56,0.7333333333333333,0.7459707646176912,0.7333333333333333,0.7298635811084598,0.7296951601869798,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.85      0.76       150
+Non-Offensive       0.80      0.62      0.70       150
+
+     accuracy                           0.73       300
+    macro avg       0.75      0.73      0.73       300
+ weighted avg       0.75      0.73      0.73       300
+","[[127  23]
+ [ 57  93]]",PROFANITY: 103; TOXICITY: 15; SPAM: 7; INSULT: 2
+../data/labeled_data_small_42.csv,0.58,0.7366666666666667,0.7434285714285714,0.7366666666666667,0.7348251748251748,0.7347052280311457,"               precision    recall  f1-score   support
+
+    Offensive       0.70      0.82      0.76       150
+Non-Offensive       0.78      0.65      0.71       150
+
+     accuracy                           0.74       300
+    macro avg       0.74      0.74      0.73       300
+ weighted avg       0.74      0.74      0.73       300
+","[[123  27]
+ [ 52  98]]",PROFANITY: 97; TOXICITY: 17; SPAM: 8; INSULT: 1
+../data/labeled_data_small_42.csv,0.61,0.7433333333333333,0.7436040044493882,0.7433333333333333,0.7432620172270076,0.7432552557891462,"               precision    recall  f1-score   support
+
+    Offensive       0.74      0.76      0.75       150
+Non-Offensive       0.75      0.73      0.74       150
+
+     accuracy                           0.74       300
+    macro avg       0.74      0.74      0.74       300
+ weighted avg       0.74      0.74      0.74       300
+","[[114  36]
+ [ 41 109]]",PROFANITY: 89; TOXICITY: 15; SPAM: 8; INSULT: 2
+../data/labeled_data_small_123.csv,0.5,0.7433333333333333,0.7724016120204985,0.7433333333333333,0.7362983595703148,0.7358029562630892,"               precision    recall  f1-score   support
+
+    Offensive       0.68      0.91      0.78       150
+Non-Offensive       0.86      0.58      0.69       150
+
+     accuracy                           0.74       300
+    macro avg       0.77      0.74      0.74       300
+ weighted avg       0.77      0.74      0.74       300
+","[[136  14]
+ [ 63  87]]",TOXICITY: 129; INSULT: 1; THREAT: 1; PROFANITY: 4; SPAM: 1
+../data/labeled_data_small_123.csv,0.52,0.7733333333333333,0.7900396151669496,0.7733333333333333,0.770021645021645,0.7693459063014518,"               precision    recall  f1-score   support
+
+    Offensive       0.72      0.89      0.80       150
+Non-Offensive       0.86      0.65      0.74       150
+
+     accuracy                           0.77       300
+    macro avg       0.79      0.77      0.77       300
+ weighted avg       0.79      0.77      0.77       300
+","[[134  16]
+ [ 52  98]]",TOXICITY: 126; INSULT: 1; THREAT: 1; PROFANITY: 4; SPAM: 2
+../data/labeled_data_small_123.csv,0.54,0.7766666666666666,0.7890106318770602,0.7766666666666666,0.7742562248003683,0.7737174087641286,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.88      0.80       150
+Non-Offensive       0.85      0.67      0.75       150
+
+     accuracy                           0.78       300
+    macro avg       0.79      0.78      0.77       300
+ weighted avg       0.79      0.78      0.77       300
+","[[132  18]
+ [ 49 101]]",TOXICITY: 122; SPAM: 3; PROFANITY: 7
+../data/labeled_data_small_123.csv,0.56,0.77,0.7804838635209381,0.77,0.7678305050527708,0.7674095848192587,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.87      0.79       150
+Non-Offensive       0.83      0.67      0.75       150
+
+     accuracy                           0.77       300
+    macro avg       0.78      0.77      0.77       300
+ weighted avg       0.78      0.77      0.77       300
+","[[130  20]
+ [ 49 101]]",TOXICITY: 120; SPAM: 2; PROFANITY: 8
+../data/labeled_data_small_123.csv,0.58,0.7666666666666667,0.7725290697674418,0.7666666666666667,0.7654050672505474,0.7651739452257587,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.84      0.78       150
+Non-Offensive       0.81      0.69      0.75       150
+
+     accuracy                           0.77       300
+    macro avg       0.77      0.77      0.77       300
+ weighted avg       0.77      0.77      0.77       300
+","[[126  24]
+ [ 46 104]]",TOXICITY: 117; SPAM: 2; PROFANITY: 7
+../data/labeled_data_small_123.csv,0.61,0.7533333333333333,0.7555595408895265,0.7533333333333333,0.752794975724912,0.7527245048941499,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.80      0.76       150
+Non-Offensive       0.78      0.71      0.74       150
+
+     accuracy                           0.75       300
+    macro avg       0.76      0.75      0.75       300
+ weighted avg       0.76      0.75      0.75       300
+","[[120  30]
+ [ 44 106]]",TOXICITY: 107; SPAM: 3; INSULT: 1; PROFANITY: 9
+../data/labeled_data_small_2025.csv,0.5,0.7366666666666667,0.7766090073242948,0.7366666666666667,0.7268043019677007,0.726422482928059,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.93      0.78       150
+Non-Offensive       0.88      0.55      0.67       150
+
+     accuracy                           0.74       300
+    macro avg       0.78      0.74      0.73       300
+ weighted avg       0.78      0.74      0.73       300
+","[[139  11]
+ [ 68  82]]",TOXICITY: 134; SPAM: 1; PROFANITY: 4
+../data/labeled_data_small_2025.csv,0.52,0.7566666666666667,0.7846089399241042,0.7566666666666667,0.7505439054117164,0.7497934109239662,"               precision    recall  f1-score   support
+
+    Offensive       0.70      0.91      0.79       150
+Non-Offensive       0.87      0.60      0.71       150
+
+     accuracy                           0.76       300
+    macro avg       0.78      0.76      0.75       300
+ weighted avg       0.78      0.76      0.75       300
+","[[137  13]
+ [ 60  90]]",TOXICITY: 130; SPAM: 3; PROFANITY: 4
+../data/labeled_data_small_2025.csv,0.54,0.7666666666666667,0.7893518518518519,0.7666666666666667,0.762001903984768,0.7612138332477315,"               precision    recall  f1-score   support
+
+    Offensive       0.71      0.91      0.80       150
+Non-Offensive       0.87      0.63      0.73       150
+
+     accuracy                           0.77       300
+    macro avg       0.79      0.77      0.76       300
+ weighted avg       0.79      0.77      0.76       300
+","[[136  14]
+ [ 56  94]]",TOXICITY: 126; SPAM: 4; PROFANITY: 6
+../data/labeled_data_small_2025.csv,0.56,0.77,0.7874923098764849,0.77,0.7664474055353093,0.7657792921795445,"               precision    recall  f1-score   support
+
+    Offensive       0.72      0.89      0.80       150
+Non-Offensive       0.86      0.65      0.74       150
+
+     accuracy                           0.77       300
+    macro avg       0.79      0.77      0.77       300
+ weighted avg       0.79      0.77      0.77       300
+","[[134  16]
+ [ 53  97]]",TOXICITY: 121; SPAM: 6; PROFANITY: 7
+../data/labeled_data_small_2025.csv,0.58,0.77,0.7874923098764849,0.77,0.7664474055353093,0.7657792921795445,"               precision    recall  f1-score   support
+
+    Offensive       0.72      0.89      0.80       150
+Non-Offensive       0.86      0.65      0.74       150
+
+     accuracy                           0.77       300
+    macro avg       0.79      0.77      0.77       300
+ weighted avg       0.79      0.77      0.77       300
+","[[134  16]
+ [ 53  97]]",TOXICITY: 120; SPAM: 6; PROFANITY: 8
+../data/labeled_data_small_2025.csv,0.61,0.7866666666666666,0.79296875,0.7866666666666666,0.7855132043433577,0.7851911689346923,"               precision    recall  f1-score   support
+
+    Offensive       0.75      0.86      0.80       150
+Non-Offensive       0.84      0.71      0.77       150
+
+     accuracy                           0.79       300
+    macro avg       0.79      0.79      0.79       300
+ weighted avg       0.79      0.79      0.79       300
+","[[129  21]
+ [ 43 107]]",TOXICITY: 114; SPAM: 7; INSULT: 2; PROFANITY: 6
+../data/labeled_data_small_6556.csv,0.5,0.68,0.7200608563355791,0.68,0.6647420376233936,0.6666499523642381,"               precision    recall  f1-score   support
+
+    Offensive       0.63      0.89      0.74       150
+Non-Offensive       0.81      0.47      0.59       150
+
+     accuracy                           0.68       300
+    macro avg       0.72      0.68      0.66       300
+ weighted avg       0.72      0.68      0.66       300
+","[[134  16]
+ [ 80  70]]",INSULT: 1; TOXICITY: 124; SPAM: 7; PROFANITY: 2
+../data/labeled_data_small_6556.csv,0.52,0.6933333333333334,0.7246436686634993,0.6933333333333334,0.6822619266899982,0.6832044965353509,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.88      0.74       150
+Non-Offensive       0.81      0.51      0.62       150
+
+     accuracy                           0.69       300
+    macro avg       0.72      0.69      0.68       300
+ weighted avg       0.72      0.69      0.68       300
+","[[132  18]
+ [ 74  76]]",TOXICITY: 120; SPAM: 7; PROFANITY: 5
+../data/labeled_data_small_6556.csv,0.54,0.6933333333333334,0.7197413618912911,0.6933333333333334,0.6838343108504399,0.6846065352378367,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.87      0.74       150
+Non-Offensive       0.80      0.52      0.63       150
+
+     accuracy                           0.69       300
+    macro avg       0.72      0.69      0.68       300
+ weighted avg       0.72      0.69      0.68       300
+","[[130  20]
+ [ 72  78]]",TOXICITY: 119; SPAM: 7; PROFANITY: 4
+../data/labeled_data_small_6556.csv,0.56,0.69,0.7106845399438175,0.69,0.6821997699080771,0.6828639046495482,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.85      0.73       150
+Non-Offensive       0.78      0.53      0.63       150
+
+     accuracy                           0.69       300
+    macro avg       0.71      0.69      0.68       300
+ weighted avg       0.71      0.69      0.68       300
+","[[127  23]
+ [ 70  80]]",TOXICITY: 116; SPAM: 7; PROFANITY: 3; INSULT: 1
+../data/labeled_data_small_6556.csv,0.58,0.6966666666666667,0.709407978798921,0.6966666666666667,0.691981360923379,0.6922670463759799,"               precision    recall  f1-score   support
+
+    Offensive       0.66      0.82      0.73       150
+Non-Offensive       0.76      0.57      0.65       150
+
+     accuracy                           0.70       300
+    macro avg       0.71      0.70      0.69       300
+ weighted avg       0.71      0.70      0.69       300
+","[[123  27]
+ [ 64  86]]",TOXICITY: 110; SPAM: 7; INSULT: 1; PROFANITY: 5
+../data/labeled_data_small_6556.csv,0.61,0.7133333333333334,0.7210351814330448,0.7133333333333334,0.7108142037302726,0.7108396413846143,"               precision    recall  f1-score   support
+
+    Offensive       0.68      0.81      0.74       150
+Non-Offensive       0.76      0.62      0.68       150
+
+     accuracy                           0.71       300
+    macro avg       0.72      0.71      0.71       300
+ weighted avg       0.72      0.71      0.71       300
+","[[121  29]
+ [ 57  93]]",TOXICITY: 106; SPAM: 9; INSULT: 1; PROFANITY: 5
+../data/labeled_data_small_8080.csv,0.5,0.7433333333333333,0.7954508661162377,0.7433333333333333,0.7314921365554277,0.7308502124322552,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.95      0.79       150
+Non-Offensive       0.92      0.53      0.68       150
+
+     accuracy                           0.74       300
+    macro avg       0.80      0.74      0.73       300
+ weighted avg       0.80      0.74      0.73       300
+","[[143   7]
+ [ 70  80]]",PROFANITY: 117; TOXICITY: 23; SPAM: 3
+../data/labeled_data_small_8080.csv,0.52,0.7433333333333333,0.7780458077294196,0.7433333333333333,0.735064398848505,0.7345169030768763,"               precision    recall  f1-score   support
+
+    Offensive       0.68      0.92      0.78       150
+Non-Offensive       0.88      0.57      0.69       150
+
+     accuracy                           0.74       300
+    macro avg       0.78      0.74      0.74       300
+ weighted avg       0.78      0.74      0.74       300
+","[[138  12]
+ [ 65  85]]",PROFANITY: 112; SPAM: 4; TOXICITY: 22
+../data/labeled_data_small_8080.csv,0.54,0.7533333333333333,0.7822341057635176,0.7533333333333333,0.7468527640941435,0.7461495619390357,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.91      0.79       150
+Non-Offensive       0.87      0.59      0.71       150
+
+     accuracy                           0.75       300
+    macro avg       0.78      0.75      0.75       300
+ weighted avg       0.78      0.75      0.75       300
+","[[137  13]
+ [ 61  89]]",PROFANITY: 110; SPAM: 5; TOXICITY: 22
+../data/labeled_data_small_8080.csv,0.56,0.7533333333333333,0.7796310832025117,0.7533333333333333,0.7473942924764462,0.7467379511192326,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.91      0.79       150
+Non-Offensive       0.87      0.60      0.71       150
+
+     accuracy                           0.75       300
+    macro avg       0.78      0.75      0.75       300
+ weighted avg       0.78      0.75      0.75       300
+","[[136  14]
+ [ 60  90]]",PROFANITY: 106; SPAM: 6; TOXICITY: 24
+../data/labeled_data_small_8080.csv,0.58,0.7333333333333333,0.7493351063829787,0.7333333333333333,0.728985049008537,0.7287864313009752,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.86      0.76       150
+Non-Offensive       0.81      0.61      0.69       150
+
+     accuracy                           0.73       300
+    macro avg       0.75      0.73      0.73       300
+ weighted avg       0.75      0.73      0.73       300
+","[[129  21]
+ [ 59  91]]",PROFANITY: 100; SPAM: 6; TOXICITY: 23
+../data/labeled_data_small_8080.csv,0.61,0.7266666666666667,0.7336876832844575,0.7266666666666667,0.7245980923380055,0.7245329498205845,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.81      0.75       150
+Non-Offensive       0.77      0.64      0.70       150
+
+     accuracy                           0.73       300
+    macro avg       0.73      0.73      0.72       300
+ weighted avg       0.73      0.73      0.72       300
+","[[122  28]
+ [ 54  96]]",PROFANITY: 96; SPAM: 7; TOXICITY: 19
+../data/labeled_data_small_42.csv,0.48,0.7266666666666667,0.7576278035966862,0.7266666666666667,0.7182001466275659,0.7181008796061422,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.90      0.77       150
+Non-Offensive       0.85      0.55      0.67       150
+
+     accuracy                           0.73       300
+    macro avg       0.76      0.73      0.72       300
+ weighted avg       0.76      0.73      0.72       300
+","[[135  15]
+ [ 67  83]]",PROFANITY: 113; INSULT: 2; TOXICITY: 17; SPAM: 3
+../data/labeled_data_small_123.csv,0.48,0.74,0.7788680024788268,0.74,0.7306133726284767,0.730132793672814,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.93      0.78       150
+Non-Offensive       0.88      0.55      0.68       150
+
+     accuracy                           0.74       300
+    macro avg       0.78      0.74      0.73       300
+ weighted avg       0.78      0.74      0.73       300
+","[[139  11]
+ [ 67  83]]",TOXICITY: 131; INSULT: 2; THREAT: 1; PROFANITY: 4; SPAM: 1
+../data/labeled_data_small_2025.csv,0.48,0.74,0.7934144751141056,0.74,0.7276029055690073,0.7270900638247578,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.95      0.79       150
+Non-Offensive       0.92      0.53      0.67       150
+
+     accuracy                           0.74       300
+    macro avg       0.79      0.74      0.73       300
+ weighted avg       0.79      0.74      0.73       300
+","[[143   7]
+ [ 71  79]]",TOXICITY: 137; SPAM: 2; INSULT: 2; PROFANITY: 2
+../data/labeled_data_small_6556.csv,0.48,0.68,0.7301136363636364,0.68,0.6615746180963572,0.6640064562410329,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.91      0.74       150
+Non-Offensive       0.84      0.45      0.58       150
+
+     accuracy                           0.68       300
+    macro avg       0.73      0.68      0.66       300
+ weighted avg       0.73      0.68      0.66       300
+","[[137  13]
+ [ 83  67]]",INSULT: 2; TOXICITY: 128; SPAM: 5; PROFANITY: 2
+../data/labeled_data_small_8080.csv,0.48,0.7333333333333333,0.7893518518518519,0.7333333333333333,0.7197702115734902,0.7195454936360509,"               precision    recall  f1-score   support
+
+    Offensive       0.66      0.95      0.78       150
+Non-Offensive       0.92      0.51      0.66       150
+
+     accuracy                           0.73       300
+    macro avg       0.79      0.73      0.72       300
+ weighted avg       0.79      0.73      0.72       300
+","[[143   7]
+ [ 73  77]]",PROFANITY: 119; TOXICITY: 21; SPAM: 3
+../data/labeled_data_small_42.csv,0.3,0.6333333333333333,0.7663352272727273,0.6333333333333333,0.5810268650652581,0.5952864689150752,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.95      0.28      0.43       150
+
+     accuracy                           0.63       300
+    macro avg       0.77      0.63      0.58       300
+ weighted avg       0.77      0.63      0.58       300
+","[[148   2]
+ [108  42]]",PROFANITY: 137; TOXICITY: 9; SPAM: 2
+../data/labeled_data_small_42.csv,0.32,0.64,0.7695994522423827,0.64,0.5908264295817337,0.6035339070917409,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.96      0.29      0.45       150
+
+     accuracy                           0.64       300
+    macro avg       0.77      0.64      0.59       300
+ weighted avg       0.77      0.64      0.59       300
+","[[148   2]
+ [106  44]]",PROFANITY: 137; TOXICITY: 9; SPAM: 2
+../data/labeled_data_small_42.csv,0.34,0.65,0.7657689581856839,0.65,0.6072270227808326,0.6171939880477438,"               precision    recall  f1-score   support
+
+    Offensive       0.59      0.98      0.74       150
+Non-Offensive       0.94      0.32      0.48       150
+
+     accuracy                           0.65       300
+    macro avg       0.77      0.65      0.61       300
+ weighted avg       0.77      0.65      0.61       300
+","[[147   3]
+ [102  48]]",PROFANITY: 136; TOXICITY: 9; SPAM: 2
+../data/labeled_data_small_42.csv,0.36,0.66,0.7710027100271002,0.66,0.6212121212121212,0.6293512915609344,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.98      0.74       150
+Non-Offensive       0.94      0.34      0.50       150
+
+     accuracy                           0.66       300
+    macro avg       0.77      0.66      0.62       300
+ weighted avg       0.77      0.66      0.62       300
+","[[147   3]
+ [ 99  51]]",PROFANITY: 134; TOXICITY: 11; SPAM: 2
+../data/labeled_data_small_42.csv,0.38,0.68,0.7681408898305085,0.68,0.6513486029732216,0.6557509944082549,"               precision    recall  f1-score   support
+
+    Offensive       0.61      0.97      0.75       150
+Non-Offensive       0.92      0.39      0.55       150
+
+     accuracy                           0.68       300
+    macro avg       0.77      0.68      0.65       300
+ weighted avg       0.77      0.68      0.65       300
+","[[145   5]
+ [ 91  59]]",PROFANITY: 133; TOXICITY: 10; SPAM: 2
+../data/labeled_data_small_123.csv,0.3,0.6666666666666666,0.7822944896115628,0.6666666666666666,0.6286393345216875,0.6361290042726702,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.99      0.75       150
+Non-Offensive       0.96      0.35      0.51       150
+
+     accuracy                           0.67       300
+    macro avg       0.78      0.67      0.63       300
+ weighted avg       0.78      0.67      0.63       300
+","[[148   2]
+ [ 98  52]]",TOXICITY: 147; SPAM: 1
+../data/labeled_data_small_123.csv,0.32,0.6933333333333334,0.7947953374898347,0.6933333333333334,0.6644621668936005,0.6681135490197492,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.99      0.76       150
+Non-Offensive       0.97      0.40      0.57       150
+
+     accuracy                           0.69       300
+    macro avg       0.79      0.69      0.66       300
+ weighted avg       0.79      0.69      0.66       300
+","[[148   2]
+ [ 90  60]]",TOXICITY: 147; SPAM: 1
+../data/labeled_data_small_123.csv,0.34,0.7,0.7979343220338984,0.7,0.6731393152873952,0.6760174669971752,"               precision    recall  f1-score   support
+
+    Offensive       0.63      0.99      0.77       150
+Non-Offensive       0.97      0.41      0.58       150
+
+     accuracy                           0.70       300
+    macro avg       0.80      0.70      0.67       300
+ weighted avg       0.80      0.70      0.67       300
+","[[148   2]
+ [ 88  62]]",TOXICITY: 147; SPAM: 1
+../data/labeled_data_small_123.csv,0.36,0.71,0.8026711933892767,0.71,0.6859621470082179,0.6878058569754738,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.99      0.77       150
+Non-Offensive       0.97      0.43      0.60       150
+
+     accuracy                           0.71       300
+    macro avg       0.80      0.71      0.69       300
+ weighted avg       0.80      0.71      0.69       300
+","[[148   2]
+ [ 85  65]]",TOXICITY: 147; SPAM: 1
+../data/labeled_data_small_123.csv,0.38,0.7166666666666667,0.788888888888889,0.7166666666666667,0.6977777777777777,0.6986531986531986,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.97      0.77       150
+Non-Offensive       0.93      0.47      0.62       150
+
+     accuracy                           0.72       300
+    macro avg       0.79      0.72      0.70       300
+ weighted avg       0.79      0.72      0.70       300
+","[[145   5]
+ [ 80  70]]",TOXICITY: 142; PROFANITY: 2; SPAM: 1
+../data/labeled_data_small_2025.csv,0.3,0.64,0.7695994522423827,0.64,0.5908264295817337,0.6035339070917409,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.96      0.29      0.45       150
+
+     accuracy                           0.64       300
+    macro avg       0.77      0.64      0.59       300
+ weighted avg       0.77      0.64      0.59       300
+","[[148   2]
+ [106  44]]",TOXICITY: 148
+../data/labeled_data_small_2025.csv,0.32,0.6466666666666666,0.7728174603174603,0.6466666666666666,0.6004824363033318,0.6117414362719528,"               precision    recall  f1-score   support
+
+    Offensive       0.59      0.99      0.74       150
+Non-Offensive       0.96      0.31      0.46       150
+
+     accuracy                           0.65       300
+    macro avg       0.77      0.65      0.60       300
+ weighted avg       0.77      0.65      0.60       300
+","[[148   2]
+ [104  46]]",TOXICITY: 148
+../data/labeled_data_small_2025.csv,0.34,0.6566666666666666,0.7775809118828254,0.6566666666666666,0.6147084128231025,0.6239788745773016,"               precision    recall  f1-score   support
+
+    Offensive       0.59      0.99      0.74       150
+Non-Offensive       0.96      0.33      0.49       150
+
+     accuracy                           0.66       300
+    macro avg       0.78      0.66      0.61       300
+ weighted avg       0.78      0.66      0.61       300
+","[[148   2]
+ [101  49]]",TOXICITY: 148
+../data/labeled_data_small_2025.csv,0.36,0.66,0.7791563275434242,0.66,0.6193840489576595,0.6280385461280241,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.99      0.74       150
+Non-Offensive       0.96      0.33      0.50       150
+
+     accuracy                           0.66       300
+    macro avg       0.78      0.66      0.62       300
+ weighted avg       0.78      0.66      0.62       300
+","[[148   2]
+ [100  50]]",TOXICITY: 148
+../data/labeled_data_small_2025.csv,0.38,0.6766666666666666,0.7795555242984739,0.6766666666666666,0.6439016630159449,0.6494228815684774,"               precision    recall  f1-score   support
+
+    Offensive       0.61      0.98      0.75       150
+Non-Offensive       0.95      0.37      0.54       150
+
+     accuracy                           0.68       300
+    macro avg       0.78      0.68      0.64       300
+ weighted avg       0.78      0.68      0.64       300
+","[[147   3]
+ [ 94  56]]",TOXICITY: 146; PROFANITY: 1
+../data/labeled_data_small_6556.csv,0.3,0.5933333333333334,0.7448694029850745,0.5933333333333334,0.5189021504810979,0.5449381671819401,"               precision    recall  f1-score   support
+
+    Offensive       0.55      0.99      0.71       150
+Non-Offensive       0.94      0.20      0.33       150
+
+     accuracy                           0.59       300
+    macro avg       0.74      0.59      0.52       300
+ weighted avg       0.74      0.59      0.52       300
+","[[148   2]
+ [120  30]]",TOXICITY: 145; SPAM: 3
+../data/labeled_data_small_6556.csv,0.32,0.6066666666666667,0.7525252525252525,0.6066666666666667,0.5402836216300453,0.5618885394828791,"               precision    recall  f1-score   support
+
+    Offensive       0.56      0.99      0.71       150
+Non-Offensive       0.94      0.23      0.37       150
+
+     accuracy                           0.61       300
+    macro avg       0.75      0.61      0.54       300
+ weighted avg       0.75      0.61      0.54       300
+","[[148   2]
+ [116  34]]",TOXICITY: 145; SPAM: 3
+../data/labeled_data_small_6556.csv,0.34,0.6266666666666667,0.7630121816168328,0.6266666666666667,0.571078431372549,0.5869986711108206,"               precision    recall  f1-score   support
+
+    Offensive       0.57      0.99      0.73       150
+Non-Offensive       0.95      0.27      0.42       150
+
+     accuracy                           0.63       300
+    macro avg       0.76      0.63      0.57       300
+ weighted avg       0.76      0.63      0.57       300
+","[[148   2]
+ [110  40]]",TOXICITY: 145; SPAM: 3
+../data/labeled_data_small_6556.csv,0.36,0.64,0.7695994522423827,0.64,0.5908264295817337,0.6035339070917409,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.96      0.29      0.45       150
+
+     accuracy                           0.64       300
+    macro avg       0.77      0.64      0.59       300
+ weighted avg       0.77      0.64      0.59       300
+","[[148   2]
+ [106  44]]",TOXICITY: 143; INSULT: 1; SPAM: 4
+../data/labeled_data_small_6556.csv,0.38,0.6433333333333333,0.762216440361005,0.6433333333333333,0.5977393200416045,0.6090405740368895,"               precision    recall  f1-score   support
+
+    Offensive       0.59      0.98      0.73       150
+Non-Offensive       0.94      0.31      0.46       150
+
+     accuracy                           0.64       300
+    macro avg       0.76      0.64      0.60       300
+ weighted avg       0.76      0.64      0.60       300
+","[[147   3]
+ [104  46]]",TOXICITY: 141; SPAM: 5; INSULT: 1
+../data/labeled_data_small_8080.csv,0.3,0.63,0.7646819292371732,0.63,0.5760715967969854,0.59114764332158,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.95      0.27      0.42       150
+
+     accuracy                           0.63       300
+    macro avg       0.76      0.63      0.58       300
+ weighted avg       0.76      0.63      0.58       300
+","[[148   2]
+ [109  41]]",PROFANITY: 142; TOXICITY: 3; SPAM: 3
+../data/labeled_data_small_8080.csv,0.32,0.6433333333333333,0.7712135228323943,0.6433333333333333,0.5956720535073246,0.6076426323313843,"               precision    recall  f1-score   support
+
+    Offensive       0.58      0.99      0.73       150
+Non-Offensive       0.96      0.30      0.46       150
+
+     accuracy                           0.64       300
+    macro avg       0.77      0.64      0.60       300
+ weighted avg       0.77      0.64      0.60       300
+","[[148   2]
+ [105  45]]",PROFANITY: 141; TOXICITY: 4; SPAM: 3
+../data/labeled_data_small_8080.csv,0.34,0.66,0.7710027100271002,0.66,0.6212121212121212,0.6293512915609344,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.98      0.74       150
+Non-Offensive       0.94      0.34      0.50       150
+
+     accuracy                           0.66       300
+    macro avg       0.77      0.66      0.62       300
+ weighted avg       0.77      0.66      0.62       300
+","[[147   3]
+ [ 99  51]]",PROFANITY: 136; TOXICITY: 8; SPAM: 3
+../data/labeled_data_small_8080.csv,0.36,0.6666666666666666,0.774443793911007,0.6666666666666666,0.6303780000985658,0.6374082476014333,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.98      0.75       150
+Non-Offensive       0.95      0.35      0.51       150
+
+     accuracy                           0.67       300
+    macro avg       0.77      0.67      0.63       300
+ weighted avg       0.77      0.67      0.63       300
+","[[147   3]
+ [ 97  53]]",PROFANITY: 133; TOXICITY: 11; SPAM: 3
+../data/labeled_data_small_8080.csv,0.38,0.6833333333333333,0.7829412168187118,0.6833333333333333,0.6527735474360067,0.6573860532043225,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.98      0.76       150
+Non-Offensive       0.95      0.39      0.55       150
+
+     accuracy                           0.68       300
+    macro avg       0.78      0.68      0.65       300
+ weighted avg       0.78      0.68      0.65       300
+","[[147   3]
+ [ 92  58]]",PROFANITY: 132; TOXICITY: 12; SPAM: 3
+../data/labeled_data_small_42.csv,0.4,0.6866666666666666,0.7608695652173912,0.6866666666666666,0.6626794258373205,0.6657975184319368,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.95      0.75       150
+Non-Offensive       0.90      0.42      0.57       150
+
+     accuracy                           0.69       300
+    macro avg       0.76      0.69      0.66       300
+ weighted avg       0.76      0.69      0.66       300
+","[[143   7]
+ [ 87  63]]",PROFANITY: 129; TOXICITY: 12; SPAM: 2
+../data/labeled_data_small_42.csv,0.42,0.71,0.7751732572360375,0.71,0.6917480601386543,0.6928797442795839,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.95      0.77       150
+Non-Offensive       0.91      0.47      0.62       150
+
+     accuracy                           0.71       300
+    macro avg       0.78      0.71      0.69       300
+ weighted avg       0.78      0.71      0.69       300
+","[[143   7]
+ [ 80  70]]",PROFANITY: 126; TOXICITY: 15; SPAM: 2
+../data/labeled_data_small_42.csv,0.44,0.7333333333333333,0.7852640730276026,0.7333333333333333,0.7206183646861614,0.7203744958846999,"               precision    recall  f1-score   support
+
+    Offensive       0.66      0.95      0.78       150
+Non-Offensive       0.91      0.52      0.66       150
+
+     accuracy                           0.73       300
+    macro avg       0.79      0.73      0.72       300
+ weighted avg       0.79      0.73      0.72       300
+","[[142   8]
+ [ 72  78]]",PROFANITY: 121; INSULT: 1; TOXICITY: 17; SPAM: 3
+../data/labeled_data_small_42.csv,0.46,0.73,0.7720963247279036,0.73,0.719136836995342,0.7189782458199095,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.93      0.77       150
+Non-Offensive       0.88      0.53      0.66       150
+
+     accuracy                           0.73       300
+    macro avg       0.77      0.73      0.72       300
+ weighted avg       0.77      0.73      0.72       300
+","[[139  11]
+ [ 70  80]]",PROFANITY: 119; INSULT: 2; TOXICITY: 15; SPAM: 3
+../data/labeled_data_small_42.csv,0.6,0.75,0.7513517136601278,0.75,0.7496634363978237,0.7496234745607498,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.79      0.76       150
+Non-Offensive       0.77      0.71      0.74       150
+
+     accuracy                           0.75       300
+    macro avg       0.75      0.75      0.75       300
+ weighted avg       0.75      0.75      0.75       300
+","[[118  32]
+ [ 43 107]]",PROFANITY: 90; TOXICITY: 19; SPAM: 8; INSULT: 1
+../data/labeled_data_small_123.csv,0.4,0.7166666666666667,0.7792256142963514,0.7166666666666667,0.699855224284655,0.70054030879401,"               precision    recall  f1-score   support
+
+    Offensive       0.65      0.95      0.77       150
+Non-Offensive       0.91      0.48      0.63       150
+
+     accuracy                           0.72       300
+    macro avg       0.78      0.72      0.70       300
+ weighted avg       0.78      0.72      0.70       300
+","[[143   7]
+ [ 78  72]]",TOXICITY: 141; PROFANITY: 1; SPAM: 1
+../data/labeled_data_small_123.csv,0.42,0.7233333333333334,0.7789961690078286,0.7233333333333334,0.7088093929435979,0.7090406819937242,"               precision    recall  f1-score   support
+
+    Offensive       0.65      0.95      0.77       150
+Non-Offensive       0.90      0.50      0.64       150
+
+     accuracy                           0.72       300
+    macro avg       0.78      0.72      0.71       300
+ weighted avg       0.78      0.72      0.71       300
+","[[142   8]
+ [ 75  75]]",TOXICITY: 140; PROFANITY: 1; SPAM: 1
+../data/labeled_data_small_123.csv,0.44,0.72,0.7728174603174605,0.72,0.7057587221521648,0.7061081011351908,"               precision    recall  f1-score   support
+
+    Offensive       0.65      0.94      0.77       150
+Non-Offensive       0.89      0.50      0.64       150
+
+     accuracy                           0.72       300
+    macro avg       0.77      0.72      0.71       300
+ weighted avg       0.77      0.72      0.71       300
+","[[141   9]
+ [ 75  75]]",TOXICITY: 138; THREAT: 1; PROFANITY: 1; SPAM: 1
+../data/labeled_data_small_123.csv,0.46,0.7466666666666667,0.7900292642140468,0.7466666666666667,0.7368299552149221,0.7361178675671035,"               precision    recall  f1-score   support
+
+    Offensive       0.68      0.94      0.79       150
+Non-Offensive       0.90      0.55      0.69       150
+
+     accuracy                           0.75       300
+    macro avg       0.79      0.75      0.74       300
+ weighted avg       0.79      0.75      0.74       300
+","[[141   9]
+ [ 67  83]]",TOXICITY: 135; INSULT: 1; THREAT: 1; PROFANITY: 3; SPAM: 1
+../data/labeled_data_small_123.csv,0.6,0.7633333333333333,0.7676272641040697,0.7633333333333333,0.762380213969366,0.7622180635038663,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.83      0.78       150
+Non-Offensive       0.80      0.70      0.75       150
+
+     accuracy                           0.76       300
+    macro avg       0.77      0.76      0.76       300
+ weighted avg       0.77      0.76      0.76       300
+","[[124  26]
+ [ 45 105]]",TOXICITY: 112; SPAM: 3; INSULT: 1; PROFANITY: 8
+../data/labeled_data_small_2025.csv,0.4,0.6833333333333333,0.7762708458910991,0.6833333333333333,0.6542562870764639,0.6585548473594014,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.97      0.75       150
+Non-Offensive       0.94      0.39      0.55       150
+
+     accuracy                           0.68       300
+    macro avg       0.78      0.68      0.65       300
+ weighted avg       0.78      0.68      0.65       300
+","[[146   4]
+ [ 91  59]]",TOXICITY: 144; PROFANITY: 1; INSULT: 1
+../data/labeled_data_small_2025.csv,0.42,0.6933333333333334,0.7701863354037267,0.6933333333333334,0.6698564593301435,0.6725409099082899,"               precision    recall  f1-score   support
+
+    Offensive       0.63      0.96      0.76       150
+Non-Offensive       0.91      0.43      0.58       150
+
+     accuracy                           0.69       300
+    macro avg       0.77      0.69      0.67       300
+ weighted avg       0.77      0.69      0.67       300
+","[[144   6]
+ [ 86  64]]",TOXICITY: 144
+../data/labeled_data_small_2025.csv,0.44,0.7133333333333334,0.7819548872180451,0.7133333333333334,0.6947612512422506,0.6957689435284655,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.96      0.77       150
+Non-Offensive       0.92      0.47      0.62       150
+
+     accuracy                           0.71       300
+    macro avg       0.78      0.71      0.69       300
+ weighted avg       0.78      0.71      0.69       300
+","[[144   6]
+ [ 80  70]]",TOXICITY: 143; INSULT: 1
+../data/labeled_data_small_2025.csv,0.46,0.73,0.7917300862506342,0.73,0.7149192271143491,0.7148908360362104,"               precision    recall  f1-score   support
+
+    Offensive       0.66      0.96      0.78       150
+Non-Offensive       0.93      0.50      0.65       150
+
+     accuracy                           0.73       300
+    macro avg       0.79      0.73      0.71       300
+ weighted avg       0.79      0.73      0.71       300
+","[[144   6]
+ [ 75  75]]",TOXICITY: 140; PROFANITY: 2; INSULT: 2
+../data/labeled_data_small_2025.csv,0.6,0.7766666666666666,0.7907384054925038,0.7766666666666666,0.7739312346053918,0.7733238215852558,"               precision    recall  f1-score   support
+
+    Offensive       0.73      0.89      0.80       150
+Non-Offensive       0.85      0.67      0.75       150
+
+     accuracy                           0.78       300
+    macro avg       0.79      0.78      0.77       300
+ weighted avg       0.79      0.78      0.77       300
+","[[133  17]
+ [ 50 100]]",TOXICITY: 119; INSULT: 1; SPAM: 6; PROFANITY: 7
+../data/labeled_data_small_6556.csv,0.4,0.6566666666666666,0.7544942603422135,0.6566666666666666,0.6201644724711436,0.6278809643748949,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.97      0.74       150
+Non-Offensive       0.91      0.35      0.50       150
+
+     accuracy                           0.66       300
+    macro avg       0.75      0.66      0.62       300
+ weighted avg       0.75      0.66      0.62       300
+","[[145   5]
+ [ 98  52]]",TOXICITY: 138; SPAM: 5; INSULT: 1; PROFANITY: 1
+../data/labeled_data_small_6556.csv,0.42,0.66,0.75,0.66,0.6263736263736264,0.6331168831168831,"               precision    recall  f1-score   support
+
+    Offensive       0.60      0.96      0.74       150
+Non-Offensive       0.90      0.36      0.51       150
+
+     accuracy                           0.66       300
+    macro avg       0.75      0.66      0.63       300
+ weighted avg       0.75      0.66      0.63       300
+","[[144   6]
+ [ 96  54]]",TOXICITY: 138; SPAM: 5; PROFANITY: 1
+../data/labeled_data_small_6556.csv,0.44,0.6733333333333333,0.7472109533468559,0.6733333333333333,0.6469571064892646,0.651233590511285,"               precision    recall  f1-score   support
+
+    Offensive       0.61      0.95      0.74       150
+Non-Offensive       0.88      0.40      0.55       150
+
+     accuracy                           0.67       300
+    macro avg       0.75      0.67      0.65       300
+ weighted avg       0.75      0.67      0.65       300
+","[[142   8]
+ [ 90  60]]",TOXICITY: 135; SPAM: 5; INSULT: 1; PROFANITY: 1
+../data/labeled_data_small_6556.csv,0.46,0.6833333333333333,0.7444444444444444,0.6833333333333333,0.6622222222222222,0.6649831649831649,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.93      0.75       150
+Non-Offensive       0.87      0.43      0.58       150
+
+     accuracy                           0.68       300
+    macro avg       0.74      0.68      0.66       300
+ weighted avg       0.74      0.68      0.66       300
+","[[140  10]
+ [ 85  65]]",TOXICITY: 133; SPAM: 4; INSULT: 1; PROFANITY: 2
+../data/labeled_data_small_6556.csv,0.6,0.71,0.719369515762106,0.71,0.7068700232482396,0.7069366508826636,"               precision    recall  f1-score   support
+
+    Offensive       0.67      0.81      0.74       150
+Non-Offensive       0.76      0.61      0.68       150
+
+     accuracy                           0.71       300
+    macro avg       0.72      0.71      0.71       300
+ weighted avg       0.72      0.71      0.71       300
+","[[122  28]
+ [ 59  91]]",TOXICITY: 108; SPAM: 8; INSULT: 1; PROFANITY: 5
+../data/labeled_data_small_8080.csv,0.4,0.6933333333333334,0.7880031779661016,0.6933333333333334,0.6658757445160041,0.6692619761342019,"               precision    recall  f1-score   support
+
+    Offensive       0.62      0.98      0.76       150
+Non-Offensive       0.95      0.41      0.57       150
+
+     accuracy                           0.69       300
+    macro avg       0.79      0.69      0.67       300
+ weighted avg       0.79      0.69      0.67       300
+","[[147   3]
+ [ 89  61]]",PROFANITY: 132; TOXICITY: 12; SPAM: 3
+../data/labeled_data_small_8080.csv,0.42,0.71,0.7964426877470356,0.71,0.6871966346672419,0.6888750384484629,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.98      0.77       150
+Non-Offensive       0.96      0.44      0.60       150
+
+     accuracy                           0.71       300
+    macro avg       0.80      0.71      0.69       300
+ weighted avg       0.80      0.71      0.69       300
+","[[147   3]
+ [ 84  66]]",PROFANITY: 127; TOXICITY: 16; SPAM: 3; INSULT: 1
+../data/labeled_data_small_8080.csv,0.44,0.7133333333333334,0.7870126763932074,0.7133333333333334,0.6936740121580548,0.6947967035730451,"               precision    recall  f1-score   support
+
+    Offensive       0.64      0.97      0.77       150
+Non-Offensive       0.93      0.46      0.62       150
+
+     accuracy                           0.71       300
+    macro avg       0.79      0.71      0.69       300
+ weighted avg       0.79      0.71      0.69       300
+","[[145   5]
+ [ 81  69]]",PROFANITY: 125; TOXICITY: 16; SPAM: 3; INSULT: 1
+../data/labeled_data_small_8080.csv,0.46,0.72,0.7907659774436091,0.72,0.7018598267947566,0.7025011489630608,"               precision    recall  f1-score   support
+
+    Offensive       0.65      0.97      0.78       150
+Non-Offensive       0.93      0.47      0.63       150
+
+     accuracy                           0.72       300
+    macro avg       0.79      0.72      0.70       300
+ weighted avg       0.79      0.72      0.70       300
+","[[145   5]
+ [ 79  71]]",PROFANITY: 122; TOXICITY: 19; SPAM: 3; INSULT: 1
+../data/labeled_data_small_8080.csv,0.6,0.7333333333333333,0.7444589308996088,0.7333333333333333,0.7302643409458731,0.7301113493720124,"               precision    recall  f1-score   support
+
+    Offensive       0.69      0.84      0.76       150
+Non-Offensive       0.80      0.63      0.70       150
+
+     accuracy                           0.73       300
+    macro avg       0.74      0.73      0.73       300
+ weighted avg       0.74      0.73      0.73       300
+","[[126  24]
+ [ 56  94]]",PROFANITY: 97; SPAM: 6; TOXICITY: 23
